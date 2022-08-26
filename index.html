@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="scale">
+        <div class="scaleFill">
+            <div class="scaleCounter">
+                20% из 100%
+            </div>
+        </div>
+    </div>
+    <div class="note">
+        +50% к точности стоимости ремонта за заполнение данных о объекте
+    </div>
+</header>
+<main>
+    <h1>
+        Заполните форму, чтобы получить более точную стоимость!
+    </h1>
+    <div class="calculation">
+        <div class="calculationItem">
+            <label class="itemLabel" for="square">Введите площадь:</label>
+            <div class="inputBlock">
+                <input type="text" id="square" placeholder="Введите общую площадь *">
+                <div class="accuracy">+5% к точности</div>
+            </div>
+        </div>
+        <div class="calculationItem">
+            <p class="itemLabel">Выберите количество комнат:</p>
+            <div class="inputBlock">
+                <div class="roomNumbers">
+                    <div class="roomNum">1</div>
+                    <div class="roomNum">2</div>
+                    <div class="roomNum">3</div>
+                    <div class="roomNum">4</div>
+                    <div class="roomNum">5+</div>
+                </div>
+                <div class="accuracy">+5% к точности</div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback">
+        <div class="feedbackTitle">
+            Не хотите мучаться выбором, наш специалист рассчитает все за 1 минуту!
+        </div>
+        <div class="feedbackSubtitle">
+            Наш менеджер свяжется с Вами, ответит на вопросы и поможет сделать точный расчёт сметы дистанционно
+        </div>
+        <form>
+            <div class="feedbackForm">
+                <input type="text" placeholder="Ваше имя...">
+                <input type="text" placeholder="+7 (9XX) XXX-XX-XX">
+            </div>
+            <button class="feedbackBtn">
+                Начать расчет стоимости
+            </button>
+        </form>
+        <div class="feedbackFootnote">
+            Нажимая “Опубликовать” вы подтверждаете согласие с <a href="#" target="_blank"> Политикой в отношение
+            обработки персональных данных</a>
+        </div>
+    </div>
+    <div class="renovationType">
+        <div class="renovationTitle">
+            Выберите тип ремонта:
+        </div>
+        <div class="renovationList">
+            <div class="renovationItem renovationItem__active">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="19" cy="19" r="19" fill="#3051F5"/>
+                    <g clip-path="url(#clip0_103_16)">
+                        <path d="M28.4142 15.1403L17.8633 25.6905C17.082 26.4719 15.8146 26.4719 15.0326 25.6905L9.58617 20.2436C8.80457 19.4622 8.80457 18.1946 9.58617 17.413C10.3679 16.6313 11.6352 16.6313 12.4166 17.4127L16.4484 21.4446L25.5833 12.3096C26.365 11.5279 27.6324 11.5284 28.4139 12.3096C29.1953 13.0912 29.1953 14.3583 28.4142 15.1403Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_103_16">
+                            <rect width="20" height="20" fill="white" transform="translate(9 9)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <img class="renovationPic" src="images/renovation.png" alt="renovation">
+                <div class="tab type">Капитальный</div>
+                <div class="tab price">от 2300 руб/м2</div>
+            </div>
+            <div class="renovationItem">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="19" cy="19" r="19" fill="#3051F5"/>
+                    <g clip-path="url(#clip0_103_16)">
+                        <path d="M28.4142 15.1403L17.8633 25.6905C17.082 26.4719 15.8146 26.4719 15.0326 25.6905L9.58617 20.2436C8.80457 19.4622 8.80457 18.1946 9.58617 17.413C10.3679 16.6313 11.6352 16.6313 12.4166 17.4127L16.4484 21.4446L25.5833 12.3096C26.365 11.5279 27.6324 11.5284 28.4139 12.3096C29.1953 13.0912 29.1953 14.3583 28.4142 15.1403Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_103_16">
+                            <rect width="20" height="20" fill="white" transform="translate(9 9)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <img class="renovationPic" src="images/renovation.png" alt="renovation">
+                <div class="tab type">Капитальный</div>
+                <div class="tab price">от 2300 руб/м2</div>
+            </div>
+            <div class="renovationItem">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="19" cy="19" r="19" fill="#3051F5"/>
+                    <g clip-path="url(#clip0_103_16)">
+                        <path d="M28.4142 15.1403L17.8633 25.6905C17.082 26.4719 15.8146 26.4719 15.0326 25.6905L9.58617 20.2436C8.80457 19.4622 8.80457 18.1946 9.58617 17.413C10.3679 16.6313 11.6352 16.6313 12.4166 17.4127L16.4484 21.4446L25.5833 12.3096C26.365 11.5279 27.6324 11.5284 28.4139 12.3096C29.1953 13.0912 29.1953 14.3583 28.4142 15.1403Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_103_16">
+                            <rect width="20" height="20" fill="white" transform="translate(9 9)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <img class="renovationPic" src="images/renovation.png" alt="renovation">
+                <div class="tab type">Капитальный</div>
+                <div class="tab price">от 2300 руб/м2</div>
+            </div>
+        </div>
+        <button class="renovationBtn">
+            Раскрыть описание
+        </button>
+    </div>
+    <div class="workType">
+        <div class="workTypeColumn">
+            <div class="workType_title">
+                Стены:
+            </div>
+            <ul>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+            </ul>
+        </div>
+        <div class="workTypeColumn">
+            <div class="workType_title">
+                Потолок:
+            </div>
+            <ul>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+            </ul>
+        </div>
+        <div class="workTypeColumn">
+            <div class="workType_title">
+                Пол:
+            </div>
+            <ul>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+            </ul>
+        </div>
+        <div class="workTypeColumn">
+            <div class="workType_title">
+                Инженерия:
+            </div>
+            <ul>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+                <li>
+                    Покраска стен
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="galleryTitle">
+            Более 1000 квартиры уже сделаны, 86 ремонтируются прямо сейчас.
+        </div>
+        <div class="swiper gallerySlider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/galleryPic.png" alt="galleryPic">
+                </div>
+            </div>
+
+            <div class="swiperNavigation">
+                <div class="swiperArrow button-prev">
+                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 9L11 16H8L0 8L8 0H11L4 7H24V9H4Z" fill="black"/>
+                    </svg>
+                </div>
+                <div class="swiperArrow button-next">
+                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 9L13 16H16L24 8L16 0H13L20 7H0V9H20Z" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="controlElements">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </div>
+    <button class="resultBtn">
+        <p>Перейти к результату</p>
+        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.75 20.75L20.75 27.75H23.75L31.75 19.75L23.75 11.75H20.75L27.75 18.75H7.75V20.75H27.75Z" fill="white"/>
+            <rect x="1" y="1" width="37" height="37" rx="18.5" stroke="white" stroke-width="2"/>
+        </svg>
+    </button>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
